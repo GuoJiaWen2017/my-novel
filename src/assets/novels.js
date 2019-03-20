@@ -20,7 +20,7 @@ const simpleList = [
  * @name 书名
  * @author 作者
  * @summary 简介
- * @plot 剧情介绍
+ * @plot 剧情
  * @tags 标签集
  * @score 个人评分（满分5分，可取半分）
  * @comment 评语
@@ -32,16 +32,13 @@ const simpleList = [
 const novels = [
   {
     'name': '凌天传说',
-    'author': '',
+    'author': '风凌天下',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
-    'score': 5,
+    'tags': ['穿越', '后宫', '武侠'],
+    'score': 4,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 235.38,
     'startTime': '',
     'endTime': '',
     'img': 'coverImages/1.jpg'
@@ -51,64 +48,52 @@ const novels = [
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': ['穿越', '后宫', '玄幻'],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/2.jpg'
   },
   {
     'name': '诛仙',
     'author': '萧鼎',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': ['仙侠'],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 1522200,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/3.jpg'
   },
   {
     'name': '诛仙II',
-    'author': '',
-    'summary': '',
+    'author': '三西贝',
+    'summary': '本书是根据故事而继续的续集。看过的朋友都知道结局并不明朗，则是结局后续的一部书，以‘碧瑶复活’为引子，是谁救活了碧瑶，自然是我们的主角张小凡费尽千辛万苦才救活的，可碧瑶复活后他高兴吗？碧瑶复活后记忆全失，又在鬼王凶灵的引导下接任鬼王宗，在她眼里，张小凡只是一个有本事的追求者而已…',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': ['仙侠'],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/4.jpg'
   },
   {
     'name': '善良的死神',
-    'author': '',
+    'author': '唐家三少',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': ['奇幻', '剑与魔法'],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 1665800,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/5.jpg'
   },
   {
     'name': '狂神',
@@ -1804,7 +1789,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/111.jpg'
   }
 ]
 export { simpleList, novels }

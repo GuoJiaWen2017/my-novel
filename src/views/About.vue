@@ -38,10 +38,29 @@
           </div>
           <div class="case-content">
             <div class="case-row">
-              <div class="case-wrapper" v-for="i in rowNum" :key="'case-wrapper-' + i">
-                <div class="book-content">
-                  <div class="book-wrapper" title="">
-                    <img class="book-img" src="http://online.anyflip.com/pguq/dbek/files/shot.jpg" alt="">
+              <div class="case-wrapper" v-for="i in rowNum - 1" :key="'case-wrapper-' + i">
+                <div class="book-content" v-for="j in colNum"
+                     :key="'book-key-' + ((i - 1) * colNum + j - 1)">
+                  <div class="book-wrapper">
+                    <img class="book-img"
+                         :src="data[(i - 1) * colNum + j - 1].img"
+                         :alt="data[(i - 1) * colNum + j - 1].name">
+                    <div class="book-border-container">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-wrapper">
+                <div class="book-content" v-for="j in (data.length - colNum * (rowNum - 1))"
+                     :key="'book-key-' + (colNum * (rowNum - 1) + j)">
+                  <div class="book-wrapper">
+                    <img class="book-img"
+                         :src="data[colNum * (rowNum - 1) + j - 1].img"
+                         :alt="data[colNum * (rowNum - 1) + j - 1].name">
                     <div class="book-border-container">
                       <div></div>
                       <div></div>
@@ -66,7 +85,7 @@
           </ul>
         </div>
         <label>
-          <input class="footer-input" type="text"/>
+          <input class="footer-input" disabled v-model="data.length" type="text"/>
         </label>
       </div>
     </div>
@@ -84,12 +103,12 @@ export default {
     return {
       baseUrl: process.env.BASE_URL,
       rowNum: 4, // 书柜多少层
-      colNum: 4, // 书柜每层多少本书
-      data: []
+      colNum: 9, // 书柜每层多少本书
+      data: novels
     }
   },
-  mounted () {
-    this.data = novels
+  created () {
+    this.rowNum = Math.floor(novels.length / this.colNum) + 1
   }
 }
 </script>
@@ -386,6 +405,9 @@ export default {
                   position: relative;
                   z-index: 1;
                   float: left;
+                  &:hover .book-wrapper{
+                    top: -10px;
+                  }
                   .book-wrapper {
                     width: 108px;
                     height: 140px;
