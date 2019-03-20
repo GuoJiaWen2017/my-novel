@@ -44,7 +44,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '召唤万岁',
@@ -60,7 +60,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '诛仙',
@@ -76,7 +76,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '诛仙II',
@@ -92,7 +92,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '善良的死神',
@@ -108,7 +108,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '狂神',
@@ -124,7 +124,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '斗罗大陆',
@@ -140,7 +140,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '天珠变',
@@ -156,7 +156,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '神印王座',
@@ -172,7 +172,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '吞噬星空',
@@ -188,7 +188,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '九鼎记',
@@ -204,7 +204,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '魔兽剑圣异界纵横',
@@ -220,7 +220,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '斗破苍穹',
@@ -236,7 +236,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '武动乾坤',
@@ -252,7 +252,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '百变销魂',
@@ -268,7 +268,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '卡徒',
@@ -284,7 +284,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '十方天士',
@@ -300,7 +300,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异世灵武天下',
@@ -316,7 +316,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '大昏君',
@@ -332,7 +332,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '修真世界',
@@ -348,7 +348,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '兽血沸腾',
@@ -364,7 +364,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '末世生成大师',
@@ -380,7 +380,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '天才医生',
@@ -396,7 +396,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '透视之眼',
@@ -412,7 +412,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之改天换地',
@@ -428,7 +428,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '最强弃少',
@@ -444,7 +444,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之神级败家子',
@@ -460,7 +460,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之大涅磐',
@@ -476,7 +476,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之心动',
@@ -492,7 +492,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '逆流纯真年代',
@@ -508,7 +508,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生完美时代',
@@ -524,7 +524,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生不重来',
@@ -540,7 +540,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '俗人回档',
@@ -556,7 +556,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '阳光大秦',
@@ -572,7 +572,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '我欲封天',
@@ -588,7 +588,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '放开那女巫',
@@ -604,7 +604,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '凡人修仙传',
@@ -620,7 +620,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '仙逆',
@@ -636,7 +636,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '巫师不朽',
@@ -652,7 +652,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '巫师世界',
@@ -668,7 +668,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '巫师之旅',
@@ -684,7 +684,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '神秘之旅',
@@ -700,7 +700,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '末日轮盘',
@@ -716,7 +716,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '黑暗王者',
@@ -732,7 +732,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '钢铁皇朝',
@@ -748,7 +748,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '我的大明新帝国',
@@ -764,7 +764,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '汉乡',
@@ -780,7 +780,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '唐砖',
@@ -796,7 +796,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '赤色黎明',
@@ -812,7 +812,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '金鳞开',
@@ -828,7 +828,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '陕西坑',
@@ -844,7 +844,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '狩魔手记',
@@ -860,7 +860,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '蹉跎',
@@ -876,7 +876,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重启末世',
@@ -892,7 +892,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重卡战车在末世',
@@ -908,7 +908,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '超维术士',
@@ -924,7 +924,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '永恒剑主',
@@ -940,7 +940,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '巫术师',
@@ -956,7 +956,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之贼行天下',
@@ -972,7 +972,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '天生神医',
@@ -988,7 +988,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '低调术士',
@@ -1004,7 +1004,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '极品驸马',
@@ -1020,7 +1020,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '极品戒指',
@@ -1036,7 +1036,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '总裁的私有宝贝',
@@ -1052,7 +1052,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '千年军国',
@@ -1068,7 +1068,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '武帝丹神',
@@ -1084,7 +1084,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '落笔成仙',
@@ -1100,7 +1100,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '家里养个狐狸精',
@@ -1116,7 +1116,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '龙皇武神',
@@ -1132,7 +1132,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异世之风流大法师',
@@ -1148,7 +1148,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '带着农场混异界',
@@ -1164,7 +1164,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之妖孽人生',
@@ -1180,7 +1180,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '纨绔太子',
@@ -1196,7 +1196,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '都市之最强纨绔',
@@ -1212,7 +1212,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '大魔王',
@@ -1228,7 +1228,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异界之魔武流氓',
@@ -1244,7 +1244,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '材料帝国',
@@ -1260,7 +1260,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异世之极品天才',
@@ -1276,7 +1276,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '美女的超级保镖',
@@ -1292,7 +1292,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生在三国',
@@ -1308,7 +1308,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异界流氓天尊',
@@ -1324,7 +1324,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生工业帝国',
@@ -1340,7 +1340,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '武逆',
@@ -1356,7 +1356,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异界魅影逍遥',
@@ -1372,7 +1372,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '纨绔风云',
@@ -1388,7 +1388,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '铁器时代',
@@ -1404,7 +1404,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '末世之重生御女',
@@ -1420,7 +1420,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '末日冰河',
@@ -1436,7 +1436,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '我的贴身校花',
@@ -1452,7 +1452,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '活人禁忌',
@@ -1468,7 +1468,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之十全九美',
@@ -1484,7 +1484,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '御女天下',
@@ -1500,7 +1500,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '超级巨人分身',
@@ -1516,7 +1516,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '北回归线',
@@ -1532,7 +1532,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '尸虐',
@@ -1548,7 +1548,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '神魔天尊',
@@ -1564,7 +1564,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '近战召唤师',
@@ -1580,7 +1580,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '随身带着异性王后',
@@ -1596,7 +1596,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '异界重生之暗黑领主',
@@ -1612,7 +1612,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '修仙高手在校园',
@@ -1628,7 +1628,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '会长大人的女仆攻略',
@@ -1644,7 +1644,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '重生之纨绔大少',
@@ -1660,7 +1660,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '资本大唐',
@@ -1676,7 +1676,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '死亡名单',
@@ -1692,7 +1692,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '龙腾原始',
@@ -1708,7 +1708,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '巫界术士',
@@ -1724,7 +1724,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '破法之眼',
@@ -1740,7 +1740,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '刺客魔传',
@@ -1756,7 +1756,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '黑暗无限',
@@ -1772,7 +1772,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '恶魔法则',
@@ -1788,7 +1788,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   },
   {
     'name': '崩坏星河',
@@ -1804,7 +1804,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/logo.png'
+    'img': 'coverImages/1.jpg'
   }
 ]
 export { simpleList, novels }
