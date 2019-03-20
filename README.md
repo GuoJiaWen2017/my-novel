@@ -1,29 +1,15 @@
 # my-novel
+> 个人几年来看过的网络小说书架集合
 
-## Project setup
+基于vue.js，运行以及部署需要安装Node环境
+#### 运行
 ```
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### 部署
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
