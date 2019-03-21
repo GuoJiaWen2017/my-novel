@@ -33,15 +33,15 @@ const novels = [
   {
     'name': '凌天传说',
     'author': '风凌天下',
-    'summary': '',
-    'plot': '',
-    'tags': ['穿越', '后宫', '武侠'],
+    'summary': '穿越到异世的武学天才，超卓的武功，绝世的智慧；且看凌天如何在异世只手舞风云，左右逢源、文武双绝、威动天下；造就一个永恒的凌天传说！',
+    'plot': '本书主角，武林世家凌家人，因被族妹凌雪儿陷害，武功被废，为报复，在凌雪儿婚礼上引爆炸弹与其同归于尽。在黄泉路上原谅了凌雪儿，随后便穿越至天星大陆承天国凌家。初期韬光养晦，在外人眼里是一个纨绔子弟，但暗地里却建立了庞大的势力。天星第一刺客组织——第一楼、天星第一情报组织——水晶楼以及天风大陆第一大帮——顺天盟都是由其一手创办，凌天的56名手下（凌一~凌五零，外加凌剑与“风云雷电迟”五人）也都散布各地建立势力，从经商到做强盗不一而足，为凌天一统天星，天风，天阳三个大陆打下了基础。后成为神州帝国第三任皇帝。共6个女主角。',
+    'tags': ['穿越', '后宫', '玄幻', '异界'],
     'score': 4,
     'comment': '',
     'wordNumber': 235.38,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/凌天传说.jpg'
   },
   {
     'name': '召唤万岁',
@@ -54,7 +54,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/2.jpg'
+    'img': 'coverImages/召唤万岁.jpg'
   },
   {
     'name': '诛仙',
@@ -67,12 +67,12 @@ const novels = [
     'wordNumber': 1522200,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/3.jpg'
+    'img': 'coverImages/诛仙.jpg'
   },
   {
     'name': '诛仙II',
     'author': '三西贝',
-    'summary': '本书是根据故事而继续的续集。看过的朋友都知道结局并不明朗，则是结局后续的一部书，以‘碧瑶复活’为引子，是谁救活了碧瑶，自然是我们的主角张小凡费尽千辛万苦才救活的，可碧瑶复活后他高兴吗？碧瑶复活后记忆全失，又在鬼王凶灵的引导下接任鬼王宗，在她眼里，张小凡只是一个有本事的追求者而已…',
+    'summary': '本书是诛仙故事的续集。萧鼎的诛仙故事结局并不明朗，此书是结局后续的一部书，以‘碧瑶复活’为引子，碧瑶被主角张小凡费尽千辛万苦救活之后却记忆全失，之后在鬼王凶灵的引导下接任鬼王宗，而在她眼里，张小凡只是一个有本事的追求者',
     'plot': '',
     'tags': ['仙侠'],
     'score': 5,
@@ -80,7 +80,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/4.jpg'
+    'img': 'coverImages/诛仙II.jpg'
   },
   {
     'name': '善良的死神',
@@ -93,7 +93,7 @@ const novels = [
     'wordNumber': 1665800,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/5.jpg'
+    'img': 'coverImages/善良的死神.jpg'
   },
   {
     'name': '狂神',
@@ -109,7 +109,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/狂神.jpg'
   },
   {
     'name': '斗罗大陆',
@@ -125,7 +125,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/斗罗大陆.jpg'
   },
   {
     'name': '天珠变',
@@ -141,7 +141,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/天珠变.jpg'
   },
   {
     'name': '神印王座',
@@ -157,7 +157,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/神印王座.jpg'
   },
   {
     'name': '吞噬星空',
@@ -173,7 +173,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/吞噬星空.jpg'
   },
   {
     'name': '九鼎记',
@@ -189,7 +189,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/九鼎记.jpg'
   },
   {
     'name': '魔兽剑圣异界纵横',
@@ -205,7 +205,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/魔兽剑圣异界纵横.jpg'
   },
   {
     'name': '斗破苍穹',
@@ -221,7 +221,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/斗破苍穹.jpg'
   },
   {
     'name': '武动乾坤',
@@ -237,7 +237,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/武动乾坤.jpg'
   },
   {
     'name': '百变销魂',
@@ -253,7 +253,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/百变销魂.jpg'
   },
   {
     'name': '卡徒',
@@ -269,7 +269,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/卡徒.jpg'
   },
   {
     'name': '十方天士',
@@ -285,7 +285,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'img': 'coverImages/十方天士.jpg'
   },
   {
     'name': '异世灵武天下',
@@ -1789,7 +1789,7 @@ const novels = [
     'wordNumber': 32232,
     'startTime': '',
     'endTime': '',
-    'img': 'coverImages/111.jpg'
+    'img': 'coverImages/崩坏星河.jpg'
   }
 ]
 export { simpleList, novels }
