@@ -43,7 +43,7 @@
                      :key="'book-key-' + ((i - 1) * colNum + j - 1)">
                   <div class="book-wrapper" @click="clickOneBook(data[(i - 1) * colNum + j - 1])">
                     <img class="book-img"
-                         :src="data[(i - 1) * colNum + j - 1].img"
+                         :src="'coverImages/' + data[(i - 1) * colNum + j - 1].name + '.jpg'"
                          :alt="data[(i - 1) * colNum + j - 1].name">
                     <div class="book-border-container">
                       <div></div>
@@ -59,7 +59,7 @@
                      :key="'book-key-' + (colNum * (rowNum - 1) + j)">
                   <div class="book-wrapper" @click="clickOneBook(data[colNum * (rowNum - 1) + j - 1])">
                     <img class="book-img"
-                         :src="data[colNum * (rowNum - 1) + j - 1].img"
+                         :src="'coverImages/' + data[colNum * (rowNum - 1) + j - 1].name + '.jpg'"
                          :alt="data[colNum * (rowNum - 1) + j - 1].name">
                     <div class="book-border-container">
                       <div></div>
@@ -93,7 +93,7 @@
     <div class="dialog-overlay" @click.prevent.stop="centerDialogVisible = false" v-show="centerDialogVisible">
       <div class="dialog-container" @click.prevent.stop="">
         <div class="dialog-header">
-          {{ clickedBookData.name }}
+          《{{ clickedBookData.name }}》
           <div class="light-box-cancel-btn" title="关闭" @click.prevent.stop="centerDialogVisible = false">x</div>
         </div>
         <div class="dialog-main">
@@ -101,7 +101,7 @@
             <div class="book-detail-book">
               <img class="book-detail-shelf" src="../assets/bookshelf_images/shelf.png" alt="">
               <div class="book-wrapper">
-                <img class="book-img" :src="clickedBookData.img" :alt="clickedBookData.name">
+                <img class="book-img" :src="'coverImages/' + clickedBookData.name + '.jpg'" :alt="clickedBookData.name">
                 <div class="book-border-container">
                   <div></div>
                   <div></div>
@@ -166,12 +166,41 @@ export default {
     }
   },
   methods: {
-    clickOneBook (oneBooData) {
-      console.log(oneBooData)
+    clickOneBook: function (oneBooData) {
       this.clickedBookData = oneBooData
       this.centerDialogVisible = true
     },
+    copyToClipboard (text) {
+      if (text.indexOf('-') !== -1) {
+        let arr = text.split('-')
+        text = arr[0] + arr[1]
+      }
+      var textArea = document.createElement('textarea')
+      textArea.style.position = 'fixed'
+      textArea.style.top = '0'
+      textArea.style.left = '0'
+      textArea.style.width = '2em'
+      textArea.style.height = '2em'
+      textArea.style.padding = '0'
+      textArea.style.border = 'none'
+      textArea.style.outline = 'none'
+      textArea.style.boxShadow = 'none'
+      textArea.style.background = 'transparent'
+      textArea.value = text
+      document.body.appendChild(textArea)
+      textArea.select()
+
+      try {
+        var successful = document.execCommand('copy')
+        var msg = successful ? '成功复制到剪贴板' : '该浏览器不支持点击复制到剪贴板'
+        console.log(msg)
+      } catch (err) {
+        console.log('该浏览器不支持点击复制到剪贴板')
+      }
+      document.body.removeChild(textArea)
+    },
     searchBook () {
+      this.copyToClipboard(this.clickedBookData.name)
       window.open('https://www.baidu.com/s?ie=UTF-8&wd=' + this.clickedBookData.name) //  跳转链接
     }
   }
@@ -194,6 +223,7 @@ export default {
       width: 100%;
       left: 0;
       right: 0;
+      top: 90px;
       min-height: 262px;
       min-width: 280px;
       margin: auto;
@@ -576,7 +606,6 @@ export default {
             -webkit-transition: all .4s;
             -moz-transition: all .4s;
             -o-transition: all .4s;
-            -ms-transition: all .4s;
             transition: all .4s;
             padding: 0;
             list-style: none;
@@ -594,7 +623,6 @@ export default {
               -webkit-transition: all .2s;
               -moz-transition: all .2s;
               -o-transition: all .2s;
-              -ms-transition: all .2s;
               transition: all .2s;
               background-repeat: no-repeat;
               background-position: -70px -30px;

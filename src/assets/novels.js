@@ -35,1761 +35,1366 @@ const novels = [
     'author': '风凌天下',
     'summary': '穿越到异世的武学天才，超卓的武功，绝世的智慧；且看凌天如何在异世只手舞风云，左右逢源、文武双绝、威动天下；造就一个永恒的凌天传说！',
     'plot': '本书主角，武林世家凌家人，因被族妹凌雪儿陷害，武功被废，为报复，在凌雪儿婚礼上引爆炸弹与其同归于尽。在黄泉路上原谅了凌雪儿，随后便穿越至天星大陆承天国凌家。初期韬光养晦，在外人眼里是一个纨绔子弟，但暗地里却建立了庞大的势力。天星第一刺客组织——第一楼、天星第一情报组织——水晶楼以及天风大陆第一大帮——顺天盟都是由其一手创办，凌天的56名手下（凌一~凌五零，外加凌剑与“风云雷电迟”五人）也都散布各地建立势力，从经商到做强盗不一而足，为凌天一统天星，天风，天阳三个大陆打下了基础。后成为神州帝国第三任皇帝。共6个女主角。',
-    'tags': ['穿越', '后宫', '玄幻', '异界'],
+    'tags': [
+      '穿越',
+      '后宫',
+      '玄幻',
+      '异界'
+    ],
     'score': 4,
     'comment': '',
     'wordNumber': 235.38,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/凌天传说.jpg'
+    'endTime': ''
   },
   {
     'name': '召唤万岁',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': ['穿越', '后宫', '玄幻'],
+    'tags': [
+      '穿越',
+      '后宫',
+      '玄幻'
+    ],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/召唤万岁.jpg'
+    'endTime': ''
   },
   {
     'name': '诛仙',
     'author': '萧鼎',
     'summary': '',
     'plot': '',
-    'tags': ['仙侠'],
+    'tags': [
+      '仙侠'
+    ],
     'score': 5,
     'comment': '',
     'wordNumber': 1522200,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/诛仙.jpg'
+    'endTime': ''
   },
   {
     'name': '诛仙II',
     'author': '三西贝',
     'summary': '本书是诛仙故事的续集。萧鼎的诛仙故事结局并不明朗，此书是结局后续的一部书，以‘碧瑶复活’为引子，碧瑶被主角张小凡费尽千辛万苦救活之后却记忆全失，之后在鬼王凶灵的引导下接任鬼王宗，而在她眼里，张小凡只是一个有本事的追求者',
     'plot': '',
-    'tags': ['仙侠'],
+    'tags': [
+      '仙侠'
+    ],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/诛仙II.jpg'
+    'endTime': ''
   },
   {
     'name': '善良的死神',
     'author': '唐家三少',
     'summary': '',
     'plot': '',
-    'tags': ['奇幻', '剑与魔法'],
+    'tags': [
+      '奇幻',
+      '剑与魔法'
+    ],
     'score': 5,
     'comment': '',
     'wordNumber': 1665800,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/善良的死神.jpg'
+    'endTime': ''
   },
   {
     'name': '狂神',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/狂神.jpg'
+    'endTime': ''
   },
   {
     'name': '斗罗大陆',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/斗罗大陆.jpg'
+    'endTime': ''
   },
   {
     'name': '天珠变',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/天珠变.jpg'
+    'endTime': ''
   },
   {
     'name': '神印王座',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/神印王座.jpg'
+    'endTime': ''
   },
   {
     'name': '吞噬星空',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/吞噬星空.jpg'
+    'endTime': ''
   },
   {
     'name': '九鼎记',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/九鼎记.jpg'
+    'endTime': ''
   },
   {
     'name': '魔兽剑圣异界纵横',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/魔兽剑圣异界纵横.jpg'
+    'endTime': ''
   },
   {
     'name': '斗破苍穹',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/斗破苍穹.jpg'
+    'endTime': ''
   },
   {
     'name': '武动乾坤',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/武动乾坤.jpg'
+    'endTime': ''
   },
   {
     'name': '百变销魂',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/百变销魂.jpg'
+    'endTime': ''
   },
   {
     'name': '卡徒',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/卡徒.jpg'
+    'endTime': ''
   },
   {
     'name': '十方天士',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/十方天士.jpg'
+    'endTime': ''
   },
   {
     'name': '异世灵武天下',
-    'author': '',
-    'summary': '',
+    'author': '禹枫',
+    'summary': '陆少游人品爆发穿越到了异世界，附身在陆家的连地位还不如家中奴仆的少爷陆少游身上。刚来这里时吞食了妖丹和灵丹差点爆体身亡，被神秘老者南叔救下；之后南叔教他阴阳灵武诀可以灵武双修。之后陆少游不断的修炼不断的变强，打败了许多的强者。在这当中领悟到了新的属性——金属性和自创的灵武技和刀技；由于他领悟了金属性奥义，陆家成为了七大人皇家族之一，并且在以后成为天灵大陆十一大皇族之首。',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '异界',
+      '玄幻'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 10878682,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '大昏君',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '修真世界',
-    'author': '',
-    'summary': '',
+    'author': '方想',
+    'summary': '左莫，无空剑门毫不起眼的外门弟子，最大的愿望就是拥有无限的晶石，想尽法子的赚晶石，无意间却闯入奇异修真世界。',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '仙侠',
+      '修真'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 2868000,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '兽血沸腾',
-    'author': '',
-    'summary': '',
+    'author': '静官',
+    'summary': '一名牺牲在南疆战场上的中国侦察兵，神奇地在异时空中重生，意外成了兽人王国的萨满祭祀，而且是千年难得一见的龙祭祀！同时身中了最恶毒的魔宠的血之祭奠的诅咒！\n诅咒的背后究竟是什么？\n秀外媚中的狐族美女、深渊之国的人鱼公主、东方神秘的蚌女、最象天使的天鹅武姬一一来到他的身边……\n神秘的东方潘塔族熊猫武士，强大的俄勒芬族巨象战士……无敌于海中的班尼路族鲸鱼骑士，战神夏宫的武士们将追随主角一起在波澜壮阔的战争舞台上，抒写属于自己的辉煌。',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '玄幻',
+      '魔幻'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 18068000,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
-    'name': '末世生成大师',
-    'author': '',
-    'summary': '',
+    'name': '末世生存大师',
+    'author': '太平包子',
+    'summary': '秦暮重生了，一朝醒来，竟重回三十年前，回到末世来临之前。 \n　　在上一世，秦暮挣扎求生，也不过是本领低微的一级能力者，末世时代的蝼蚁之辈。 \n　　而这一世，拥有三十年末世生存经验的秦暮回到了最初。一切重新开始的他，将成为救世主？将成为最强的能力者和统治者？ \n　　不！他只想救下丧生兽口，死无全尸的父母。救下横死街头，惨遭蹂躏的妹妹。他只想活下去！一家人好好的活下去！',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '科幻',
+      '末世'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 1154000,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '天才医生',
-    'author': '',
+    'author': '柳下挥',
     'summary': '',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '都市',
+      '医生'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 7331000,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '透视之眼',
-    'author': '',
-    'summary': '',
+    'author': '星辉',
+    'summary': '徐青本是一位率性冲动的平凡少年，一次不平凡的际遇让他拥有了一双神奇的透视之眼，从此他的生活生了不可思议的改变，财富唾手可得，赌坛王者横空出世，艳遇接踵而来',
     'plot': '',
     'tags': [
-      '',
-      ''
+      '都市',
+      '异能'
     ],
     'score': 5,
     'comment': '',
-    'wordNumber': 32232,
+    'wordNumber': 7500536,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之改天换地',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '最强弃少',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之神级败家子',
-    'author': '',
+    'author': '辰机唐红豆',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之大涅磐',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之心动',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '逆流纯真年代',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生完美时代',
-    'author': '',
+    'author': '公子不歌',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生不重来',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '俗人回档',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '阳光大秦',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '我欲封天',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '放开那女巫',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '凡人修仙传',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '仙逆',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '巫师不朽',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '巫师世界',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '巫师之旅',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '神秘之旅',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '末日轮盘',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '黑暗王者',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '钢铁皇朝',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '我的大明新帝国',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '汉乡',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '唐砖',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '赤色黎明',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '金鳞开',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '陕西坑',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '狩魔手记',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '蹉跎',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重启末世',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重卡战车在末世',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '超维术士',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '永恒剑主',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '巫术师',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之贼行天下',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '天生神医',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '低调术士',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '极品驸马',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '极品戒指',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '总裁的私有宝贝',
-    'author': '',
-    'summary': '',
+    'author': '祸水泱泱',
+    'summary': '为救母，她被爸爸送给他。原以为，她只是他可有可无之人，他却对她爱护有加；以为他温柔有情，他却一次次不顾她的求饶！面对恶魔的他，她时时刻刻都想离开！却不料竟被告知她怀孕了！',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '千年军国',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '武帝丹神',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '落笔成仙',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '家里养个狐狸精',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '龙皇武神',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异世之风流大法师',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '带着农场混异界',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之妖孽人生',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '纨绔太子',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '都市之最强纨绔',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '大魔王',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异界之魔武流氓',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '材料帝国',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异世之极品天才',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '美女的超级保镖',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生在三国',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异界流氓天尊',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生工业帝国',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '武逆',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异界魅影逍遥',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '纨绔风云',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '铁器时代',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '末世之重生御女',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '末日冰河',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '我的贴身校花',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '活人禁忌',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之十全九美',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '御女天下',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '超级巨人分身',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '北回归线',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '尸虐',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '神魔天尊',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '近战召唤师',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '随身带着异性王后',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '异界重生之暗黑领主',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '修仙高手在校园',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '会长大人的女仆攻略',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '重生之纨绔大少',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '资本大唐',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '死亡名单',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '龙腾原始',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '巫界术士',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '破法之眼',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '刺客魔传',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '黑暗无限',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '恶魔法则',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/1.jpg'
+    'endTime': ''
   },
   {
     'name': '崩坏星河',
     'author': '',
     'summary': '',
     'plot': '',
-    'tags': [
-      '',
-      ''
-    ],
+    'tags': [],
     'score': 5,
     'comment': '',
     'wordNumber': 32232,
     'startTime': '',
-    'endTime': '',
-    'img': 'coverImages/崩坏星河.jpg'
+    'endTime': ''
   }
 ]
 export { simpleList, novels }
