@@ -15,7 +15,7 @@
 
 >  [传送门](http://toguojiawen.com) 
 
->  ![效果预览](http://github.com/GuoJiaWen2017/my-novel/raw/master/public/preview.png)
+>  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/my-novel/master/public/preview.png)
 
 ### 技术栈
 
