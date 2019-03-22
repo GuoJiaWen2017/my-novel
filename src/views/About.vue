@@ -78,10 +78,6 @@
         <div class="dialog-header">
           <span style="font-size: 24px">《{{ clickedBookData.name }}》</span>
           <span style="font-size: 14px">{{ clickedBookData.author }} 著</span>
-          <el-rate style="display: inline-block;margin-left: 10px;"
-            v-model="clickedBookData.score" disabled show-score
-            text-color="#ff9900" score-template="{value}">
-          </el-rate>
           <div class="light-box-cancel-btn" title="关闭" @click.prevent.stop="centerDialogVisible = false">x</div>
         </div>
         <div class="dialog-main">
@@ -99,10 +95,12 @@
               </div>
             </div>
             <div class="book-detail-title">
-              {{ clickedBookData.author }} 著
-              <span style="font-size: 12px;float: right">共{{ getWordNum }}字&emsp;&emsp;</span>
+              <el-rate style="display: inline-block;"
+                       v-model="clickedBookData.score" disabled show-score
+                       text-color="#ff9900" score-template="{value}">
+              </el-rate>
             </div>
-            <div class="book-detail-page">&emsp;&emsp;{{ clickedBookData.summary }}</div>
+            <div class="book-detail-page">共{{ getWordNum }}字</div>
             <div class="button" @click="searchBook">百度搜索</div>
           </div>
         </div>
@@ -231,6 +229,11 @@ export default {
             display: none;
           }
         }
+        .dialog-overlay {
+          .dialog-container {
+            width: 330px;
+          }
+        }
       }
     }
   }
@@ -239,10 +242,19 @@ export default {
   @media screen and (min-width: 768px) and (max-width: 992px) {
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .dialog-container {
+      max-width: 450px;
+    }
   }
   @media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .dialog-container {
+      max-width: 450px;
+    }
   }
   @media screen and (min-width: 1920px) {
+    .dialog-container {
+      max-width: 550px;
+    }
   }
   .about {
     .container {
@@ -698,7 +710,6 @@ export default {
       .dialog-container{
         position: relative;
         min-width: 350px;
-        max-width: 50vw;
         height: 455px;
         background: #ffffff;
         opacity: 1;   /* 背景半透明 */
@@ -834,7 +845,8 @@ export default {
               font-weight: 700;
               margin-bottom: 3px;
               overflow: hidden;
-              max-height: 44px;
+              height: 21px;
+              width: 100%;
             }
             .book-detail-page {
               text-align: left;
@@ -850,11 +862,15 @@ export default {
             }
             .button {
               display: block;
+              max-width: 150px;
+              margin: 0 auto;
               touch-action: pan-x pan-y;
               -webkit-user-drag: none;
               -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
               color: #fff;
               padding: 10px 0;
+              position: relative;
+              bottom: 0;
               background-color: #096e82;
               border: 1px solid #096e82;
               border-radius: 2px;

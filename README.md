@@ -13,7 +13,7 @@
 
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
->  [传送门](http://toguojiawen.com) 
+>  [传送门](http://toguojiawen.com) ---- 效果预览 ↓
 
 >  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/my-novel/master/public/preview.png)
 
