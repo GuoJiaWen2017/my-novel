@@ -6,12 +6,13 @@
           <h1>
             <router-link to="/">
               <img src="./assets/logo.png" alt="logo" class="nav-logo">
+              <span>胖胖博客</span>
             </router-link> |
           </h1>
-          <ul>
-            <li><router-link to="/">主页</router-link></li>
-            <li><router-link to="/about">书架</router-link></li>
-          </ul>
+          <div class="nav-right">
+            <div class="right-item"><router-link to="/">首页</router-link></div>
+            <div class="right-item"><router-link to="/about">书架</router-link></div>
+          </div>
         </div>
       </header>
     </div>
@@ -53,22 +54,27 @@
         padding: 0;
         margin: 0 auto;
         h1 {
-          margin: 0;
+          margin: 0 0 0 10px;
           float: left;
           font-size: 32px;
           font-weight: 400;
-          img {
-            vertical-align: middle;
+          a {
+            text-decoration:none;
+            img {
+              vertical-align: middle;
+            }
+            span {
+              letter-spacing: 2px;
+            }
           }
         }
-        ul {
-          float: right;
+        .nav-right {
           height: 100%;
           line-height: 80px;
           background: transparent;
           padding: 0;
           margin: 0;
-          li {
+          .right-item {
             margin: 0;
             float: left;
             list-style: none;
@@ -96,5 +102,23 @@
         }
       }
     }
+  }
+  @media screen and (max-width: 420px) {
+    .nav-container span {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+    .nav-container span {
+      font-size: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1920px) {
+  }
+  @media screen and (min-width: 1920px) {
   }
 </style>
