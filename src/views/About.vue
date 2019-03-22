@@ -8,7 +8,6 @@
           <div class="nav-right"></div>
         </div>
         <div class="nav-left-content">
-          <div class="nav-folder-btn"></div>
           <div class="nav-search-content">
             <label>
               <input class="nav-search-input" type="text">
@@ -30,7 +29,7 @@
       <div class="bookcase-content">
         <div class="case-panel">
           <div class="case-background">
-            <div class="case-row" v-for="i in rowNum" :key="'case-row-' + i">
+            <div class="case-row" v-for="(floor, index) in bookshelfData" :key="'case-row-' + index">
               <div class="case-left"></div>
               <div class="case-mid"></div>
               <div class="case-right"></div>
@@ -38,29 +37,13 @@
           </div>
           <div class="case-content">
             <div class="case-row">
-              <div class="case-wrapper" v-for="i in rowNum - 1" :key="'case-wrapper-' + i">
-                <div class="book-content" v-for="j in colNum"
-                     :key="'book-key-' + ((i - 1) * colNum + j - 1)">
-                  <div class="book-wrapper" @click="clickOneBook(data[(i - 1) * colNum + j - 1])">
+              <div class="case-wrapper" v-for="(floor, row) in bookshelfData" :key="'case-wrapper-' + row">
+                <div class="book-content" v-for="(book, col) in floor"
+                     :key="'book-key-' + row + '-' + col">
+                  <div class="book-wrapper" @click="clickOneBook(book)" @touchenter="clickOneBook(book)">
                     <img class="book-img"
-                         :src="'coverImages/' + data[(i - 1) * colNum + j - 1].name + '.jpg'"
-                         :alt="data[(i - 1) * colNum + j - 1].name">
-                    <div class="book-border-container">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="case-wrapper">
-                <div class="book-content" v-for="j in (data.length - colNum * (rowNum - 1))"
-                     :key="'book-key-' + (colNum * (rowNum - 1) + j)">
-                  <div class="book-wrapper" @click="clickOneBook(data[colNum * (rowNum - 1) + j - 1])">
-                    <img class="book-img"
-                         :src="'coverImages/' + data[colNum * (rowNum - 1) + j - 1].name + '.jpg'"
-                         :alt="data[colNum * (rowNum - 1) + j - 1].name">
+                         :src="'coverImages/' + book.name + '.jpg'"
+                         :alt="book.name">
                     <div class="book-border-container">
                       <div></div>
                       <div></div>
@@ -93,7 +76,12 @@
     <div class="dialog-overlay" @click.prevent.stop="centerDialogVisible = false" v-show="centerDialogVisible">
       <div class="dialog-container" @click.prevent.stop="">
         <div class="dialog-header">
-          《{{ clickedBookData.name }}》
+          <span style="font-size: 24px">《{{ clickedBookData.name }}》</span>
+          <span style="font-size: 14px">{{ clickedBookData.author }} 著</span>
+          <el-rate style="display: inline-block;margin-left: 10px;"
+            v-model="clickedBookData.score" disabled show-score
+            text-color="#ff9900" score-template="{value}">
+          </el-rate>
           <div class="light-box-cancel-btn" title="关闭" @click.prevent.stop="centerDialogVisible = false">x</div>
         </div>
         <div class="dialog-main">
@@ -152,11 +140,32 @@ export default {
         endTime: '',
         img: 'coverImages/111.jpg'
       },
+      bookshelfData: [],
       data: novels
     }
   },
   created () {
+    this.colNum = Math.floor((window.innerWidth - 20) / 160)
     this.rowNum = Math.floor(novels.length / this.colNum) + 1
+    for (let i = 0; i < novels.length; i += this.colNum) {
+      const rowData = []
+      for (let j = 0; j < this.colNum; j++) {
+        (i + j) < novels.length && rowData.push(novels[i + j])
+      }
+      this.bookshelfData.push(rowData)
+    }
+    window.onresize = () => {
+      this.colNum = Math.floor((window.innerWidth - 20) / 160)
+      this.rowNum = Math.floor(novels.length / this.colNum) + 1
+      this.bookshelfData = []
+      for (let i = 0; i < novels.length; i += this.colNum) {
+        const rowData = []
+        for (let j = 0; j < this.colNum; j++) {
+          (i + j) < novels.length && rowData.push(novels[i + j])
+        }
+        this.bookshelfData.push(rowData)
+      }
+    }
   },
   computed: {
     getWordNum: function () {
@@ -174,7 +183,7 @@ export default {
         let arr = text.split('-')
         text = arr[0] + arr[1]
       }
-      var textArea = document.createElement('textarea')
+      let textArea = document.createElement('textarea')
       textArea.style.position = 'fixed'
       textArea.style.top = '0'
       textArea.style.left = '0'
@@ -207,7 +216,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 420px) {
+    .about {
+      .container {
+        .bookcase-nav {
+          .nav-left-content {
+            .nav-search-content {
+              .nav-search-input {
+                width: 100px !important;
+              }
+            }
+          }
+          .nav-header {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 420px) and (max-width: 768px) {
   }
   @media screen and (min-width: 768px) and (max-width: 992px) {
   }
@@ -274,19 +301,6 @@ export default {
           left: 12px;
           top: 50%;
           margin-top: -15px;
-          .nav-folder-btn {
-            touch-action: pan-y;
-            user-select: none;
-            -webkit-user-drag: none;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            position: relative;
-            height: 29px;
-            width: 40px;
-            float: left;
-            background-position: -304px -220px;
-            margin-right: 1px;
-            cursor: pointer;
-          }
           .nav-search-content {
             position: relative;
             float: left;
@@ -332,8 +346,8 @@ export default {
         }
         .nav-header {
           position: absolute;
-          left: 226px;
-          right: 226px;
+          left: 50%;
+          transform: translateX(-50%);
           text-align: center;
           margin: 0;
           overflow: hidden;
@@ -486,10 +500,11 @@ export default {
               position: relative;
               text-align: center;
               .case-wrapper {
-                width: 1440px;
+                width: 100%;
                 position: relative;
                 height: 100%;
                 margin: 0 auto;
+                text-align: center;
                 .book-content {
                   top: 23px;
                   width: 130px;
@@ -498,7 +513,7 @@ export default {
                   margin: 0 15px;
                   position: relative;
                   z-index: 1;
-                  float: left;
+                  display: inline-block;
                   &:hover .book-wrapper{
                     top: -10px;
                   }
@@ -682,8 +697,9 @@ export default {
       text-align:center;
       .dialog-container{
         position: relative;
-        width:450px;
-        height: 450px;
+        min-width: 350px;
+        max-width: 50vw;
+        height: 455px;
         background: #ffffff;
         opacity: 1;   /* 背景半透明 */
         text-align:center;
@@ -697,19 +713,19 @@ export default {
           top: 0;
           padding: 13px 18px;
           font-weight: 700;
-          background: #EBEBEB;
+          background: #b8b8b8;
           border-radius: 5px 5px 0 0;
           text-align: left;
           .light-box-cancel-btn {
             position: absolute;
             top: 0;
             right: 0;
+            width: 46px;
+            height: 46px;
             cursor: pointer;
             font-size: 28px;
             font-weight: 700;
             color: gray;
-            height: 46px;
-            width: 46px;
             text-align: center;
             line-height: 46px;
             touch-action: pan-x pan-y;
@@ -724,12 +740,13 @@ export default {
         }
         .dialog-main {
           position: relative;
-          padding: 22px 20px;
+          padding: 22px 10px;
           .book-detail-content {
             position: relative;
             padding-left: 210px;
             min-height: 155px;
             line-height: 22px;
+            border-radius: 3px;
             .book-detail-book {
               position: absolute;
               top: 0;
@@ -860,6 +877,10 @@ export default {
           font-size: 12px;
           font-family: MicrosoftYaHeiUI,sans-serif;
           line-height: 22px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 6;
+          overflow: hidden;
         }
       }
     }
