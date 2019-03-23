@@ -261,7 +261,6 @@ export default {
       width: 100%;
       left: 0;
       right: 0;
-      top: 90px;
       min-height: 262px;
       min-width: 280px;
       margin: auto;

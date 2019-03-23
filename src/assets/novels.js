@@ -155,6 +155,18 @@ const novels = [
     'endTime': ''
   },
   {
+    'name': '末法王座',
+    'author': '',
+    'summary': '',
+    'plot': '',
+    'tags': [],
+    'score': 5,
+    'comment': '',
+    'wordNumber': 32232,
+    'startTime': '',
+    'endTime': ''
+  },
+  {
     'name': '吞噬星空',
     'author': '',
     'summary': '',
@@ -1374,6 +1386,18 @@ const novels = [
   },
   {
     'name': '恶魔法则',
+    'author': '',
+    'summary': '',
+    'plot': '',
+    'tags': [],
+    'score': 5,
+    'comment': '',
+    'wordNumber': 32232,
+    'startTime': '',
+    'endTime': ''
+  },
+  {
+    'name': '英雄信条',
     'author': '',
     'summary': '',
     'plot': '',

@@ -12,11 +12,14 @@
           <div class="nav-right">
             <div class="right-item"><router-link to="/">首页</router-link></div>
             <div class="right-item"><router-link to="/about">书架</router-link></div>
+            <div class="right-item"><router-link to="/bookshelf">阅读</router-link></div>
           </div>
         </div>
       </header>
     </div>
-    <router-view/>
+    <div class="router-view">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -102,6 +105,10 @@
         }
       }
     }
+  }
+  .router-view {
+    position: relative;
+    top: 80px;
   }
   @media screen and (max-width: 420px) {
     .nav-container span {
