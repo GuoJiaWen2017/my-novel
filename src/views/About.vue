@@ -42,7 +42,7 @@
                      :key="'book-key-' + row + '-' + col">
                   <div class="book-wrapper" @click="clickOneBook(book)" @touchenter="clickOneBook(book)">
                     <img class="book-img"
-                         :src="'coverImages/' + book.name + '.jpg'"
+                         v-lazy="'coverImages/' + book.name + '.jpg'"
                          :alt="book.name">
                     <div class="book-border-container">
                       <div></div>
