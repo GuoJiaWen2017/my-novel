@@ -17,20 +17,30 @@
         </div>
       </header>
     </div>
-    <div class="router-view">
-      <router-view/>
+    <div class="main">
+      <div class="router-view">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
   #app {
-     font-family: 'Avenir', Helvetica, Arial, sans-serif;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     text-align: center;
-     color: #2c3e50;
+    height: 100%;
+    color: #2c3e50;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    overflow-y: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
    }
+
+  #app {
+    -webkit-font-smoothing: antialiased;
+  }
 
   .header-nav {
     position: fixed;
@@ -106,10 +116,20 @@
       }
     }
   }
-  .router-view {
-    position: relative;
-    top: 80px;
+  .main {
+    padding: 0;
+    margin-top: 0;
+    height: 100%;
+    min-height: auto;
+    box-sizing: border-box;
+    .router-view {
+      position: relative;
+      height: calc(100% - 80px);
+      margin-top: 80px;
+      overflow: hidden;
+    }
   }
+  /* 媒体查询 */
   @media screen and (max-width: 420px) {
     .nav-container span {
       display: none;
@@ -120,12 +140,8 @@
       font-size: 24px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-  }
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1920px) {
-  }
-  @media screen and (min-width: 1920px) {
-  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {}
+  @media screen and (min-width: 992px) and (max-width: 1200px) {}
+  @media screen and (min-width: 1200px) and (max-width: 1920px) {}
+  @media screen and (min-width: 1920px) {}
 </style>

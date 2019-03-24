@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <HelloWorld msg="欢迎访问胖胖的书架"/>
+    <h1>欢迎访问胖胖的书架</h1>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+  name: 'Home'
 }
 </script>
+<style lang="scss" scoped>
+  .home {
+    position: relative;
+  }
+</style>

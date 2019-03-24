@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" :style="{ height: aboutHeight + 'px' }">
     <div class="container">
       <div class="bookcase-nav">
         <div class="nav-bg">
@@ -124,6 +124,7 @@ export default {
       baseUrl: process.env.BASE_URL,
       rowNum: 4, // 书柜多少层
       colNum: 9, // 书柜每层多少本书
+      aboutHeight: 500,
       centerDialogVisible: false,
       clickedBookData: {
         name: '默认',
@@ -145,6 +146,7 @@ export default {
   created () {
     this.colNum = Math.floor((window.innerWidth - 20) / 160)
     this.rowNum = Math.floor(novels.length / this.colNum) + 1
+    this.aboutHeight = window.innerHeight - 80
     for (let i = 0; i < novels.length; i += this.colNum) {
       const rowData = []
       for (let j = 0; j < this.colNum; j++) {
@@ -153,6 +155,7 @@ export default {
       this.bookshelfData.push(rowData)
     }
     window.onresize = () => {
+      this.aboutHeight = window.innerHeight - 80
       this.colNum = Math.floor((window.innerWidth - 20) / 160)
       this.rowNum = Math.floor(novels.length / this.colNum) + 1
       this.bookshelfData = []
@@ -214,57 +217,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @media screen and (max-width: 420px) {
-    .about {
-      .container {
-        .bookcase-nav {
-          .nav-left-content {
-            .nav-search-content {
-              .nav-search-input {
-                width: 100px !important;
-              }
-            }
-          }
-          .nav-header {
-            display: none;
-          }
-        }
-        .dialog-overlay {
-          .dialog-container {
-            width: 330px;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 420px) and (max-width: 768px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-  }
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .dialog-container {
-      max-width: 450px;
-    }
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1920px) {
-    .dialog-container {
-      max-width: 450px;
-    }
-  }
-  @media screen and (min-width: 1920px) {
-    .dialog-container {
-      max-width: 550px;
-    }
-  }
   .about {
+    position: relative;
+    width: 100%;
+    overflow: hidden auto;
     .container {
+      position: relative;
       width: 100%;
       left: 0;
       right: 0;
       min-height: 262px;
       min-width: 280px;
       margin: auto;
-      position: absolute;
       overflow: hidden;
       font-family: arial, sans-serif;
       font-size: 15px;
@@ -898,6 +862,47 @@ export default {
           overflow: hidden;
         }
       }
+    }
+  }
+  /* 移动端适配 */
+  @media screen and (max-width: 420px) {
+    .about {
+      .container {
+        .bookcase-nav {
+          .nav-left-content {
+            .nav-search-content {
+              .nav-search-input {
+                width: 100px !important;
+              }
+            }
+          }
+          .nav-header {
+            display: none;
+          }
+        }
+        .dialog-overlay {
+          .dialog-container {
+            width: 330px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 420px) and (max-width: 768px) {}
+  @media screen and (min-width: 768px) and (max-width: 992px) {}
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .dialog-container {
+      max-width: 450px;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .dialog-container {
+      max-width: 450px;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .dialog-container {
+      max-width: 550px;
     }
   }
 </style>
