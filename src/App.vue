@@ -22,8 +22,42 @@
         <router-view/>
       </div>
     </div>
+    <Live2d style="position: fixed;left: -60px;bottom: 5px;z-index: 100;pointer-events: none;"
+            :modelData="modelData"
+            :on-move="handleMove" />
   </div>
 </template>
+
+<script>
+
+export default {
+  name: 'App',
+  data () {
+    return {
+      modelData: {
+        name: 'koharu', // 模型名称
+        model: '/assets/moc/asuna_33.moc', // 模型文件地址
+        textures: [// 材质素材地址
+          '/assets/moc/asuna_33.1024/texture_00.png',
+          '/assets/moc/asuna_33.1024/texture_01.png',
+          '/assets/moc/asuna_33.1024/texture_02.png',
+          '/assets/moc/asuna_33.1024/texture_03.png'
+        ]
+      }
+    }
+  },
+  methods: {
+    handleMove (live2dModel) {
+      // 左眼，0闭眼 1睁眼
+      live2dModel.setParamFloat('PARAM_EYE_L_OPEN', 0)
+      live2dModel.setParamFloat('PARAM_ANGLE_X', -30)
+      live2dModel.setParamFloat('PARAM_ANGLE_Y', 30)
+      live2dModel.setParamFloat('PARAM_ANGLE_Z', 30)
+    }
+  }
+}
+
+</script>
 
 <style lang="scss" scoped>
   #app {

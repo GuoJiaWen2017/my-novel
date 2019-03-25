@@ -1,5 +1,6 @@
 <template>
-  <div class="about" :style="{ height: aboutHeight + 'px' }">
+  <!--<div class="about" :style="{ height: aboutHeight + 'px' }">-->
+  <div class="about" style="height: 500px">
     <div class="container">
       <div class="bookcase-nav">
         <div class="nav-bg">
@@ -40,7 +41,10 @@
               <div class="case-wrapper" v-for="(floor, row) in bookshelfData" :key="'case-wrapper-' + row">
                 <div class="book-content" v-for="(book, col) in floor"
                      :key="'book-key-' + row + '-' + col">
-                  <div class="book-wrapper" @click="clickOneBook(book)" @touchenter="clickOneBook(book)">
+                  <div class="book-wrapper"
+                       @click="clickOneBook(book)"
+                       @@touchstart="clickOneBook(book)"
+                       :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
                     <img class="book-img"
                          v-lazy="'coverImages/' + book.name + '.jpg'"
                          :alt="book.name">
@@ -168,6 +172,8 @@ export default {
       }
     }
   },
+  mounted () {
+  },
   computed: {
     getWordNum: function () {
       return this.clickedBookData.wordNumber > 10000 ? (this.clickedBookData.wordNumber / 10000).toFixed(2) + '万'
@@ -175,8 +181,8 @@ export default {
     }
   },
   methods: {
-    clickOneBook: function (oneBooData) {
-      this.clickedBookData = oneBooData
+    clickOneBook: function (oneBookData) {
+      this.clickedBookData = oneBookData
       this.centerDialogVisible = true
     },
     copyToClipboard (text) {
