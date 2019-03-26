@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <div class="welcome">欢迎访问胖胖的书架</div>
-    <br>
   </div>
 </template>
 
@@ -18,6 +17,8 @@ export default {
 <style lang="scss" scoped>
   .home {
     position: relative;
+    height: 100%;
+    width: 100%;
     .welcome {
       text-align: center;
       font-family: "Microsoft YaHei", sans-serif;

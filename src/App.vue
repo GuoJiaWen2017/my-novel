@@ -18,9 +18,9 @@
       </header>
     </div>
     <div class="main">
-      <div class="router-view">
+      <el-scrollbar class="page_scroll" wrap-style="overflow-x: auto;" :native="false">
         <router-view/>
-      </div>
+      </el-scrollbar>
     </div>
   </div>
 </template>
@@ -44,113 +44,98 @@ export default {
 <style lang="scss" scoped>
   #app {
     height: 100%;
+    overflow-y: hidden;
     color: #2c3e50;
     font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
     font-weight: 400;
     text-align: center;
-    /*overflow-y: hidden;*/
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-tap-highlight-color: transparent;
-   }
-  #app {
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .header-nav {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    left: 0;
-    top: 0;
-    z-index: 1500;
-    .nav-header {
-      height: 80px;
-      background-color: #fff;
-      color: #fff;
-      top: 0;
-      left: 0;
+    .header-nav {
+      position: fixed;
       width: 100%;
-      line-height: 80px;
-      z-index: 100;
-      position: relative;
-      .nav-container {
-        height: 100%;
-        box-sizing: border-box;
-        border-bottom: 1px solid #dcdfe6;
-        width: 1140px;
-        padding: 0;
-        margin: 0 auto;
-        h1 {
-          margin: 0 0 0 10px;
-          float: left;
-          font-size: 32px;
-          font-weight: 400;
-          a {
-            text-decoration:none;
-            img {
-              vertical-align: middle;
-            }
-            span {
-              letter-spacing: 2px;
+      height: 80px;
+      left: 0;
+      top: 0;
+      z-index: 1500;
+      .nav-header {
+        height: 80px;
+        background-color: #fff;
+        color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        line-height: 80px;
+        z-index: 100;
+        position: relative;
+        .nav-container {
+          height: 100%;
+          box-sizing: border-box;
+          border-bottom: 1px solid #dcdfe6;
+          width: 1140px;
+          padding: 0;
+          margin: 0 auto;
+          h1 {
+            margin: 0 0 0 10px;
+            float: left;
+            font-size: 32px;
+            font-weight: 400;
+            a {
+              text-decoration:none;
+              img {
+                vertical-align: middle;
+              }
+              span {
+                letter-spacing: 2px;
+              }
             }
           }
-        }
-        .nav-right {
-          height: 100%;
-          line-height: 80px;
-          background: transparent;
-          padding: 0;
-          margin: 0;
-          .right-item {
+          .nav-right {
+            height: 100%;
+            line-height: 80px;
+            background: transparent;
+            padding: 0;
             margin: 0;
-            float: left;
-            list-style: none;
-            position: relative;
-            cursor: pointer;
-            a {
-              text-decoration: none;
-              color: #1989fa;
-              opacity: .5;
-              display: block;
-              font-family: "Microsoft YaHei", sans-serif;
-              font-size: 18px;
-              padding: 0 22px;
-              &.router-link-exact-active {
-                font-size: 20px;
-                opacity: 1;
+            .right-item {
+              margin: 0;
+              float: left;
+              list-style: none;
+              position: relative;
+              cursor: pointer;
+              a {
+                text-decoration: none;
                 color: #1989fa;
-                border-bottom: 1px solid #1989fa;
-              }
-              &:hover {
-                background-color: antiquewhite;
+                opacity: .5;
+                display: block;
+                font-family: "Microsoft YaHei", sans-serif;
+                font-size: 18px;
+                padding: 0 22px;
+                &.router-link-exact-active {
+                  font-size: 20px;
+                  opacity: 1;
+                  color: #1989fa;
+                  border-bottom: 1px solid #1989fa;
+                }
+                &:hover {
+                  background-color: antiquewhite;
+                }
               }
             }
           }
         }
       }
     }
-  }
-  .main {
-    padding: 0;
-    margin-top: 0;
-    height: 100%;
-    min-height: auto;
-    box-sizing: border-box;
-    .router-view {
-      position: relative;
-      height: calc(100% - 80px);
+    .main {
+      padding: 0;
       margin-top: 80px;
-      /*overflow: hidden;*/
+      min-height: auto;
+      box-sizing: border-box;
+      overflow-y: hidden;
+      height: 100%;
+      .page_scroll {
+        height: calc(100% - 80px);
+      }
     }
-  }
-  .live-2d-container {
-    position: fixed;
-    left: -30px;
-    bottom: 10px;
-    z-index: 100;
-    pointer-events: none;
-  }
+   }
+
   /* 媒体查询 */
   @media screen and (max-width: 420px) {
     .nav-container span {

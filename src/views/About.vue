@@ -42,7 +42,7 @@
                      :key="'book-key-' + row + '-' + col">
                   <div class="book-wrapper"
                        @click="clickOneBook(book)"
-                       @@touchstart="clickOneBook(book)"
+                       @touchstart="clickOneBook(book)"
                        :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
                     <img class="book-img"
                          v-lazy="'coverImages/' + book.name + '.jpg'"
@@ -104,11 +104,16 @@
               </el-rate>
             </div>
             <div class="book-detail-page">共{{ getWordNum }}字</div>
+            <div class="book-detail-page">{{ clickedBookData.startTime }}</div>
+            <div class="book-detail-page">{{ clickedBookData.endTime }}</div>
+            <div class="book-detail-page">{{ clickedBookData.tags }}</div>
             <div class="button" @click="searchBook">百度搜索</div>
           </div>
         </div>
         <div class="dialog-footer">
-          &emsp;&emsp;{{ clickedBookData.plot }}
+          <div class="show-content">
+            &emsp;&emsp;{{ clickedBookData.plot }}
+          </div>
         </div>
       </div>
     </div>
@@ -141,6 +146,7 @@ export default {
         endTime: '',
         img: 'coverImages/111.jpg'
       },
+      scroll: null,
       bookshelfData: [],
       data: novels
     }
@@ -221,7 +227,7 @@ export default {
   .about {
     position: relative;
     width: 100%;
-    overflow: hidden auto;
+    height: 100%;
     .container {
       position: relative;
       width: 100%;
@@ -818,7 +824,6 @@ export default {
               font-size: 12px;
               font-weight: 700;
               color: #444;
-              height: 110px;
               display: -webkit-box;
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 5;
@@ -852,15 +857,18 @@ export default {
         }
         .dialog-footer {
           position: relative;
+          height: 172px;
           text-align: left;
           padding: 0 20px 10px 20px;
-          font-size: 12px;
-          font-family: MicrosoftYaHeiUI,sans-serif;
-          line-height: 22px;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 6;
-          overflow: hidden;
+          overflow-y: auto;
+          /*display: -webkit-box;*/
+          /*-webkit-box-orient: vertical;*/
+          /*-webkit-line-clamp: 6;*/
+          .show-content {
+            font-size: 12px;
+            font-family: MicrosoftYaHeiUI,sans-serif;
+            line-height: 22px;
+          }
         }
       }
     }
@@ -868,6 +876,8 @@ export default {
   /* 移动端适配 */
   @media screen and (max-width: 420px) {
     .about {
+      height: 100%;
+      width: 100%;
       .container {
         .bookcase-nav {
           .nav-left-content {

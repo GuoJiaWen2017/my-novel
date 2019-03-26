@@ -29,8 +29,9 @@ export default {
 <style lang="scss" scoped>
   .bookshelf {
     position: relative;
+    width: 100%;
     .real-shelf {
-      width: 426px;
+      width: 100%;
       height: 440px;
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
