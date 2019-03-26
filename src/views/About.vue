@@ -1,6 +1,5 @@
 <template>
-  <!--<div class="about" :style="{ height: aboutHeight + 'px' }">-->
-  <div class="about" style="height: 500px">
+  <div class="about">
     <div class="container">
       <div class="bookcase-nav">
         <div class="nav-bg">
@@ -128,7 +127,6 @@ export default {
       baseUrl: process.env.BASE_URL,
       rowNum: 4, // 书柜多少层
       colNum: 9, // 书柜每层多少本书
-      aboutHeight: 500,
       centerDialogVisible: false,
       clickedBookData: {
         name: '默认',
@@ -150,7 +148,6 @@ export default {
   created () {
     this.colNum = Math.floor((window.innerWidth - 20) / 160)
     this.rowNum = Math.floor(novels.length / this.colNum) + 1
-    this.aboutHeight = window.innerHeight - 80
     for (let i = 0; i < novels.length; i += this.colNum) {
       const rowData = []
       for (let j = 0; j < this.colNum; j++) {
@@ -159,7 +156,6 @@ export default {
       this.bookshelfData.push(rowData)
     }
     window.onresize = () => {
-      this.aboutHeight = window.innerHeight - 80
       this.colNum = Math.floor((window.innerWidth - 20) / 160)
       this.rowNum = Math.floor(novels.length / this.colNum) + 1
       this.bookshelfData = []
@@ -172,8 +168,7 @@ export default {
       }
     }
   },
-  mounted () {
-  },
+  mounted () {},
   computed: {
     getWordNum: function () {
       return this.clickedBookData.wordNumber > 10000 ? (this.clickedBookData.wordNumber / 10000).toFixed(2) + '万'

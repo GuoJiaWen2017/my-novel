@@ -10,7 +10,7 @@
     <script src="<%= BASE_URL %>live2dw/lib/L2DWidget.min.js"></script>
     <title>胖胖博客</title>
 </head>
-<body style="overflow: hidden">
+<body>
 <noscript>
     <strong>We're sorry but my-novel doesn't work properly without JavaScript enabled. Please enable it to
         continue.</strong>
@@ -45,7 +45,7 @@
     'z16',
     'histoire'
   ]
-  const num = 23 // 展示的model index 推荐17 23
+  const num = 17 // 展示的model index 推荐17 23
   // 初始化小人物 需设置属性pluginRootPath: "live2dw/"指明资源跟路径
   L2DWidget.init({
     pluginRootPath: 'live2dw/', // 资源root路径
@@ -64,7 +64,7 @@
       hOffset: 0, // 左右
       vOffset: 5// 上下
     },
-    react:{ opacityDefault: .7, opacityOnHover: .2 },
+    react:{ opacityDefault: .8, opacityOnHover: .2 },
     mobile: { show: true },
     log: false
   })

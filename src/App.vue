@@ -26,12 +26,16 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
   data () {
-    return {}
+    return {
+      scroll: null
+    }
   },
   created () {},
+  mounted () {},
   methods: {}
 }
 
@@ -44,7 +48,7 @@ export default {
     font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
     font-weight: 400;
     text-align: center;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
@@ -137,7 +141,7 @@ export default {
       position: relative;
       height: calc(100% - 80px);
       margin-top: 80px;
-      overflow: hidden;
+      /*overflow: hidden;*/
     }
   }
   .live-2d-container {
