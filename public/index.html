@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable= no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>normalize.css">
     <!-- 导入live2d的js资源 加载左下角看板娘萌妹子-->
@@ -18,7 +18,7 @@
 <div id="app"></div>
 <!-- built files will be auto injected -->
 <script type="text/javascript">
-    <!-- 加载左下角看板娘萌妹子-->
+  <!-- 加载左下角看板娘萌妹子-->
   const models = [
     'asuna',
     'chitose',
@@ -53,7 +53,10 @@
     pluginModelPath: 'models/', // 模型相对root的路径
     tagMode: false,
     debug: false,
-    model: { scale: 2, jsonPath: 'live2dw/models/live2d-widget-model-' + models[num] + '/assets/' + models[num] + '.model.json' },
+    model: {
+      scale: 2,
+      jsonPath: 'live2dw/models/live2d-widget-model-' + models[num] + '/assets/' + models[num] + '.model.json'
+    },
     // 大小位置调整
     display: {
       position: 'left', // 定位
@@ -64,7 +67,7 @@
       hOffset: 0, // 左右
       vOffset: 5// 上下
     },
-    react:{ opacityDefault: .8, opacityOnHover: .2 },
+    react: { opacityDefault: .8, opacityOnHover: .2 },
     mobile: { show: true },
     log: false
   })

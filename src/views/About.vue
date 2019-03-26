@@ -41,8 +41,7 @@
                 <div class="book-content" v-for="(book, col) in floor"
                      :key="'book-key-' + row + '-' + col">
                   <div class="book-wrapper"
-                       @click="clickOneBook(book)"
-                       @touchstart="clickOneBook(book)"
+                       @click.prevent.stop="clickOneBook(book)"
                        :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
                     <img class="book-img"
                          v-lazy="'coverImages/' + book.name + '.jpg'"
