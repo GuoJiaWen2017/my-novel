@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="cn">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>normalize.css">
+    <!-- 导入live2d的js资源 加载左下角看板娘萌妹子-->
+    <script src="<%= BASE_URL %>live2dw/lib/L2DWidget.min.js"></script>
     <title>胖胖博客</title>
-  </head>
-  <body style="overflow: hidden">
-    <noscript>
-      <strong>We're sorry but my-novel doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+</head>
+<body style="overflow: hidden">
+<noscript>
+    <strong>We're sorry but my-novel doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript">
+    <!-- 加载左下角看板娘萌妹子-->
+  const models = [
+    'asuna',
+    'chitose',
+    'epsilon2_1',
+    'gantzert_felixander',
+    'haru01',
+    'haru02',
+    'haruto',
+    'hibiki',
+    'hijiki',
+    'izumi',
+    'koharu',
+    'miku',
+    'ni-j',
+    'nico',
+    'nietzsche',
+    'nipsilon',
+    'nito',
+    'shizuku',
+    'tororo',
+    'tsumiki',
+    'unitychan',
+    'wanko',
+    'z16',
+    'histoire'
+  ]
+  const num = 23 // 展示的model index 推荐17 23
+  // 初始化小人物 需设置属性pluginRootPath: "live2dw/"指明资源跟路径
+  L2DWidget.init({
+    pluginRootPath: 'live2dw/', // 资源root路径
+    pluginJsPath: 'lib/', // js相对root的路径
+    pluginModelPath: 'models/', // 模型相对root的路径
+    tagMode: false,
+    debug: false,
+    model: { scale: 2, jsonPath: 'live2dw/models/live2d-widget-model-' + models[num] + '/assets/' + models[num] + '.model.json' },
+    // 大小位置调整
+    display: {
+      position: 'left', // 定位
+      opacityDefault: 1,
+      // 实际宽高为 以下数值 乘以 2
+      width: window.innerWidth < 500 ? 60 : window.innerWidth < 900 ? 90 : 120, // 宽度 60 适合在手机端  120适合在PC端
+      height: window.innerWidth < 500 ? 100 : window.innerWidth < 900 ? 130 : 160,
+      hOffset: 0, // 左右
+      vOffset: 5// 上下
+    },
+    react:{ opacityDefault: .7, opacityOnHover: .2 },
+    mobile: { show: true },
+    log: false
+  })
+</script>
+</body>
 </html>

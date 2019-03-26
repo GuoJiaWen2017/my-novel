@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "element-ui": "^2.6.1",
-    "live2d4vue": "^0.1.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
