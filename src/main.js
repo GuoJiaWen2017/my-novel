@@ -11,7 +11,11 @@ Vue.config.productionTip = false
 Vue.use(Rate)
 Vue.use(Scrollbar)
 Vue.use(VueLazyLoad)
-fastClick.attach(document.body)
+if ('addEventListener' in document) {
+  document.addEventListener('DOMContentLoaded', function () {
+    fastClick.attach(document.body)
+  }, false)
+}
 
 new Vue({
   router,

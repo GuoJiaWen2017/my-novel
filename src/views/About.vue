@@ -36,23 +36,18 @@
             </div>
           </div>
           <div class="case-content">
-            <div class="case-row">
-              <div class="case-wrapper" v-for="(floor, row) in bookshelfData" :key="'case-wrapper-' + row">
-                <div class="book-content" v-for="(book, col) in floor"
-                     :key="'book-key-' + row + '-' + col">
-                  <div class="book-wrapper"
-                       @click.prevent.stop="clickOneBook(book)"
-                       :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
-                    <img class="book-img"
-                         v-lazy="'coverImages/' + book.name + '.jpg'"
-                         :alt="book.name">
+            <div class="case-row" v-for="(floor, row) in bookshelfData" :key="'case-row-' + row">
+              <div class="case-wrapper">
+                <div class="book-content" v-for="(book, col) in floor" :key="'book-key-' + row + '-' + col">
+                  <a class="book-wrapper" :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
+                    <img class="book-img" v-lazy="'coverImages/' + book.name + '.jpg'" :alt="book.name"/>
                     <div class="book-border-container">
                       <div></div>
                       <div></div>
                       <div></div>
                       <div></div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -76,7 +71,7 @@
     </div>
     <!--对话框-->
     <div class="dialog-overlay" @click.prevent.stop="centerDialogVisible = false" v-show="centerDialogVisible">
-      <div class="dialog-container" @click.prevent.stop="">
+      <div class="dialog-container" @click.prevent.stop>
         <div class="dialog-header">
           <span style="font-size: 24px">《{{ clickedBookData.name }}》</span>
           <span style="font-size: 14px">{{ clickedBookData.author }} 著</span>
@@ -173,7 +168,15 @@ export default {
       }
     }
   },
-  mounted () {},
+  mounted () {
+    document.querySelectorAll('.book-content').forEach(node => {
+      node.addEventListener('click', (e) => {
+        const imgNode = e.target.querySelector('img') || e.target.parentNode.querySelector('img') ||
+          e.target.parentNode.parentNode.querySelector('img')
+        this.clickOneBook(imgNode.alt)
+      })
+    })
+  },
   computed: {
     getWordNum: function () {
       return this.clickedBookData.wordNumber > 10000 ? (this.clickedBookData.wordNumber / 10000).toFixed(2) + '万'
@@ -181,8 +184,8 @@ export default {
     }
   },
   methods: {
-    clickOneBook: function (oneBookData) {
-      this.clickedBookData = oneBookData
+    clickOneBook: function (bookName) {
+      this.clickedBookData = this.data.find((book) => book.name === bookName)
       this.centerDialogVisible = true
     },
     copyToClipboard (text) {
@@ -487,33 +490,34 @@ export default {
                 margin: 0 auto;
                 text-align: center;
                 .book-content {
+                  position: relative;
+                  display: inline-block;
                   top: 23px;
                   width: 130px;
                   height: 140px;
                   text-align: center;
                   margin: 0 15px;
-                  position: relative;
+                  cursor: pointer;
                   z-index: 1;
-                  display: inline-block;
-                  &:hover .book-wrapper{
+                  &:hover .book-wrapper {
                     top: -10px;
                   }
                   .book-wrapper {
-                    width: 108px;
-                    height: 140px;
-                    left: 11px;
-                    top: 0;
                     position: absolute;
                     display: inline-block;
+                    top: 0;
+                    left: 11px;
+                    width: 108px;
+                    height: 140px;
                     cursor: pointer;
                     background: #eee;
                     .book-img {
+                      position: relative;
                       display: inline;
                       border-right: 1px solid rgba(255, 255, 255, 1);
                       cursor: pointer;
                       width: 100%;
                       height: 100%;
-                      position: relative;
                       background: #eee;
                     }
                     .book-border-container {
