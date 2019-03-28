@@ -38,8 +38,11 @@
           <div class="case-content">
             <div class="case-row" v-for="(floor, row) in bookshelfData" :key="'case-row-' + row">
               <div class="case-wrapper">
-                <div class="book-content" v-for="(book, col) in floor" :key="'book-key-' + row + '-' + col">
-                  <a class="book-wrapper" :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
+                <div class="book-content"
+                     v-for="(book, col) in floor"
+                     :key="'book-key-' + row + '-' + col">
+                  <div class="book-wrapper"
+                       :style="centerDialogVisible && clickedBookData.name === book.name && 'top: -10px;'">
                     <img class="book-img" v-lazy="'coverImages/' + book.name + '.jpg'" :alt="book.name"/>
                     <div class="book-border-container">
                       <div></div>
@@ -47,7 +50,7 @@
                       <div></div>
                       <div></div>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -170,11 +173,13 @@ export default {
   },
   mounted () {
     document.querySelectorAll('.book-content').forEach(node => {
-      node.addEventListener('click', (e) => {
+      node.onclick = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
         const imgNode = e.target.querySelector('img') || e.target.parentNode.querySelector('img') ||
           e.target.parentNode.parentNode.querySelector('img')
         this.clickOneBook(imgNode.alt)
-      })
+      }
     })
   },
   computed: {
@@ -184,7 +189,7 @@ export default {
     }
   },
   methods: {
-    clickOneBook: function (bookName) {
+    clickOneBook (bookName) {
       this.clickedBookData = this.data.find((book) => book.name === bookName)
       this.centerDialogVisible = true
     },
